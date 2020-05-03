@@ -1,9 +1,9 @@
 export default interface Queue<T> {
   add(value: T): void;
 
-  remove(): T;
+  remove(): T | null;
 
-  peek(): T;
+  peek(): T | null;
 
   isEmpty(): boolean;
 }
